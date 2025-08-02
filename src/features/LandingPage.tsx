@@ -11,6 +11,7 @@ import {
   Sparkles,
   Users,
   Zap,
+  Home,
 } from "lucide-react";
 
 import { Typewriter } from "react-simple-typewriter";
@@ -50,10 +51,10 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigateToDemo }) => {
               Try the Demo
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="px-8 py-4 bg-white dark:bg-slate-800 text-slate-800 dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl font-semibold text-lg hover:shadow-lg transition-all duration-300 flex items-center justify-center">
+            {/* <button className="px-8 py-4 bg-white dark:bg-slate-800 text-slate-800 dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl font-semibold text-lg hover:shadow-lg transition-all duration-300 flex items-center justify-center">
               <Github className="w-5 h-5 mr-2" />
               View GitHub
-            </button>
+            </button> */}
           </div>
 
           {/* Hero Visual */}
@@ -289,13 +290,10 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigateToDemo }) => {
                 href="#"
                 className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
               >
-                GitHub
-              </a>
-              <a
-                href="#"
-                className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
-              >
-                Contact
+                <div className="flex flex-row gap-2 justify-between">
+                  <Home className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                  Home
+                </div>
               </a>
             </div>
           </div>
